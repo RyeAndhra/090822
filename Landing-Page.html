@@ -43,6 +43,32 @@ body {
     color: #F2F2F0;
 }
 
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F2F2F0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #E3E3E3;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .navbar ul li a:hover {
     color: #F2F2F0;
 }
@@ -144,10 +170,14 @@ div.gallery img {
         <img src="Images/FTHWhite.png" class="logo">
     </a>
     <ul>
-        <li><a href=#>Beranda</a></li>
-        <li><a href=#>Profil</a></li>
-        <li><a href=#>Data Siswa</a></li>
-        <li><a href=#>PPDB</a></li>
+        <li><a href=#>Article</a></li>
+        <li class="dropdown">
+            <a target="_blank" href=https://linktr.ee/Faithindustries style="margin: 0 40px;">Shop Now!</a>
+        <div class="dropdown-content">
+            <a style="color: #4F826F;" href="https://shopee.co.id/faith.industries">Shopee</a>
+            <a style="color: #4F826F;" href="https://www.tokopedia.com/faithindustries">Tokopedia</a>
+        </div>
+        </li>
     </ul>
 </div>
 
