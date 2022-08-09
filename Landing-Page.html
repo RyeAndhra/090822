@@ -68,10 +68,6 @@ body {
     padding: 15px;
 }
 
-.column2 {
-    padding: 15px;
-}
-
 .row:after {
     content: "";
     display: table;
@@ -93,6 +89,50 @@ body {
     color: white;
 }
 
+div.gallery {
+  border: none;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 50%;
+}
+
+.responsive2 {
+  padding: 0 6px;
+  float: left;
+  width: 20%;
+}
+
+.responsive3 {
+  padding: 0 6px;
+  float: left;
+  width: 33.333333%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
 </style>
 
 </head>
@@ -100,12 +140,14 @@ body {
 <body>
     
 <div class="navbar">
-    <img src="Images/FTHWhite.png" class="logo">
+    <a href="Landing-Page.html">
+        <img src="Images/FTHWhite.png" class="logo">
+    </a>
     <ul>
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="profil.html">Profil</a></li>
-        <li><a href="data.html">Data Siswa</a></li>
-        <li><a href="daftar.html">PPDB</a></li>
+        <li><a href=#>Beranda</a></li>
+        <li><a href=#>Profil</a></li>
+        <li><a href=#>Data Siswa</a></li>
+        <li><a href=#>PPDB</a></li>
     </ul>
 </div>
 
@@ -114,25 +156,35 @@ body {
 <div class="row">
     <div class="column">
         <h2 style="margin-top:0;">New Released!</h2>
-        <table>
-            <tr>
-                <td width="20px"></td> 
-                <td width="350px" height="350px"><img style="margin-top: -10px;" src="Images/Disp1.jpg" alt="Display1" width="100%" height="100%"></td>
-                <td width="10px"></td>
-                <td width="700px" height="350px"><img style="margin-top: -10px;" src="Images/Disp2.jpg" alt="Display2" width="100%" height="100%"></td>
-            </tr>   
-        </table>
-        <table>
-            <tr>
-                <td width="20px"></td> 
-                <td width="700px" height="350px"><img style="margin-top: 10px;" src="Images/Disp3.jpg" alt="Display3" width="100%" height="100%"></td>
-                <td width="10px"></td>
-                <td width="350px" height="350px"><img style="margin-top: 10px;" src="Images/Disp4.jpg" alt="Display4" width="100%" height="100%"></td>
-            </tr>   
-        </table>
+
+        <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="https://www.tokopedia.com/faithindustries/etalase/fth-x-isyana-sarasvati">
+            <img src="Images/Disp1.jpg" alt="Display1">
+            </a>
+        </div>
+        </div>
+
+        <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="https://www.tokopedia.com/faithindustries/etalase/fth-x-isyana-sarasvati">
+            <img src="Images/Disp2.jpg" alt="Display2">
+            </a>  
+        </div>
+        </div>
+
+        <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="https://www.tokopedia.com/faithindustries/etalase/fth-x-isyana-sarasvati">
+            <img src="Images/Disp3.jpg" alt="Display3">
+            </a>
+        </div>
+        </div>
     </div>
 
-    <div class="column2">
+    <hr color="#4F826F">
+
+    <div class="column">
         <table>
             <th>
                 <h2>Faith Industries</h2>
@@ -151,29 +203,77 @@ body {
     </div>
 
     <div class="column">
-        <table>
-            <tr> 
-                <td width="250px" height="250px"><img style="margin-top: -10px;" src="Images/Detail1.jpg" alt="Detail1" width="100%" height="100%"></td>
-                <td width="20px"></td> 
-                <td width="250px" height="250px"><img style="margin-top: -10px;" src="Images/Detail2.jpg" alt="Detail1" width="100%" height="100%"></td>
-                <td width="20px"></td> 
-                <td width="250px" height="250px"><img style="margin-top: -10px;" src="Images/Detail3.jpg" alt="Detail1" width="100%" height="100%"></td>
-                <td width="20px"></td> 
-                <td width="250px" height="250px"><img style="margin-top: -10px;" src="Images/Detail4.jpg" alt="Detail1" width="100%" height="100%"></td>
-                <td width="20px"></td> 
-                <td width="250px" height="250px"><img style="margin-top: -10px;" src="Images/Detail5.jpg" alt="Detail1" width="100%" height="100%"></td>
-            </tr>   
-        </table>
-        <table>
-            <tr style="padding-left: 100px;">
-                <td width="350px" height="350px"><img style="margin-top: 10px;" src="Images/Example1.jpg" alt="Example1" width="100%" height="100%"></td>
-                <td width="20px"></td>
-                <td width="350px" height="350px"><img style="margin-top: 10px;" src="Images/Example2.jpg" alt="Example2" width="100%" height="100%"></td>
-                <td width="20px"></td>
-                <td width="350px" height="350px"><img style="margin-top: 10px;" src="Images/Example3.jpg" alt="Example3" width="100%" height="100%"></td>
-            </tr>   
-        </table>
+        <div class="responsive2">
+        <div class="gallery">
+            <a target="_blank" href="Images/Detail1.jpg">
+            <img src="Images/Detail1.jpg" alt="Detail1">
+            </a>
+        </div>
+        </div>
+
+        <div class="responsive2">
+        <div class="gallery">
+            <a target="_blank" href="Images/Detail2.jpg">
+            <img src="Images/Detail2.jpg" alt="Detail2">
+            </a>
+        </div>
+        </div>
+
+        <div class="responsive2">
+        <div class="gallery">
+            <a target="_blank" href="Images/Detail3.jpg">
+            <img src="Images/Detail3.jpg" alt="Detail3">
+        </a>
+        </div>
+        </div>
+
+        <div class="responsive2">
+        <div class="gallery">
+            <a target="_blank" href="Images/Detail4.jpg">
+            <img src="Images/Detail4.jpg" alt="Detail4">
+            </a>
+        </div>
+        </div>
+
+        <div class="responsive2">
+        <div class="gallery">
+            <a target="_blank" href="Images/Detail5.jpg">
+            <img src="Images/Detail5.jpg" alt="Detail5">
+            </a>
+        </div>
+        </div>
     </div>
+
+    <hr color="#4F826F">
+
+    <div class="column">
+        <div class="responsive3">
+        <div class="gallery">
+            <a target="_blank" href="Images/Example1.jpg">
+            <img src="Images/Example1.jpg" alt="Example1">
+            </a>
+        </div>
+        </div>
+
+        <div class="responsive3">
+        <div class="gallery">
+            <a target="_blank" href="Images/Example2.jpg">
+            <img src="Images/Example2.jpg" alt="Example2">
+            </a>
+        </div>
+        </div>
+
+        <div class="responsive3">
+        <div class="gallery">
+            <a target="_blank" href="Images/Example3.jpg">
+            <img src="Images/Example3.jpg" alt="Example3">
+            </a>
+        </div>
+        </div>
+    </div>
+
+    <hr color="#4F826F">
+
 </div>
 
 <div class="footer">
