@@ -1,10 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <title>Web Bootstrap</title>
+
+    <title>Company Profile</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<style>
+
+body {
+    background-color: #F2F2F0;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4F826F;
+}
+
+.logo {
+    width: 100px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #F2F2F0;
+}
+
+.navbar ul li a:hover {
+    color: #F2F2F0;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #F2F2F0;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+    color: #F2F2F0;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: #4F826F;
+    padding: 10px;
+    text-align: center;
+    color: #F2F2F0;
+}
+
+.main {
+    float: left;
+    width: auto;
+    padding: 20px;
+    overflow: hidden;
+    color: white;
+}
+
+</style>
+
 </head>
 
+<body>
+    
+<div class="navbar">
+    <img src="FTHWhite.png" class="logo">
+    <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="data.html">Data Siswa</a></li>
+        <li><a href="daftar.html">PPDB</a></li>
+    </ul>
+</div>
+
+<hr color="#4F826F">
+
+<div class="row">
+    <div class="column">
+        <h2>Artikel Terbaru!</h2>
+        <p>
+            SMK Telkom Malang adalah pelopor Sekolah menengah kejuruan pertama di Indonesia di bidang 
+            Teknologi dan Informatika. Berpengalaman dari tahun 1992 yang telah terakreditasi "A" dan 
+            mempunyai standart mutu ISO 9001:2015. SMK Telkom Malang juga merupakan sekolah adiwiyata 
+            yang menerapkan prinsip sekolah hijau, hal tersebut semakin memberikan suasana yang nyaman 
+            bagi warga sekolah.
+        </p>
+    </div>
+
+    <div class="column">
+        <h2>Kenapa harus Telkom</h2>
+        <p>
+            <strong>Fasilitas Lengkap</strong>, 
+            Penunjang belajar dengan kualitas premium.
+                    
+            <strong>Lingkungan Nyaman</strong>,
+            Berada di lingkungan yang asri, aman, dan kondusif.
+                    
+            <strong>Pengajar Kompeten</strong>,
+            Guru yang up-to-date dengan perkembangan industri.
+                    
+            <strong>Kerjasama Luas</strong>,
+            Memperbesar kesempatan bekerja sebelum lulus.</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Copyright SMK Telkom Malang</p>
+</div>
+
+</body>
+
+</html>
